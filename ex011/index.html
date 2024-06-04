@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica.</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+<picture>
+    <source media="(max-width: 750px)" srcset="IMAGENS/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="IMAGENS/foto-m.png" type="image/png">
+    <img src="IMAGENS/foto-g.png" alt="imagem flexivel">
+</picture>
+
+
+<picture>
+    <source media="(max-width: 500px)" srcset="IMAGENS/dog-250.png" type="image/png">
+    <img src="IMAGENS/dog-1000.jpg" alt="imagem grand do dog.">
+</picture>
+
+
+    <p>Vamos incluir audio no site.</p>
+    <audio src="midia/dance.mp3" controls autoplay></audio> 
+            <!--primeiro modo e mais simples-->
+
+    <audio>
+        <source src=" NOME DA MIDIA E TARA RA TARA RA" type="audio/mpeg">
+        <source src=" NOME DA MIDIA E TARA RA TARA RA" type="audio/ogg">
+        <source src=" NOME DA MIDIA E TARA RA TARA RA" type="audio/wav">
+        <!--        ESSA É OUTRA FORMA DE INCLUIR AUDIO    -->
+    </audio>
+
+</body>
+</html>
