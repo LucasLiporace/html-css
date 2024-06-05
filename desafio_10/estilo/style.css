@@ -28,74 +28,58 @@
 }
 
 body{
-    background-color: var(--cor0);
+    background-color: var(--cor01);
     font-family:var(--fonte-padrão) ;
 }
 
-a.externo::after{
-    content: '\00a0\1f517\00a0'; /*00a0 é para dar espaço entre o simbolo e a palavra*/
-}
-
-
 header{
-    background-image: linear-gradient(to bottom, var(--cor03), var(--cor05);
-    min-height: 150px;
+    background-image: linear-gradient(to bottom, #2fa866, #063d1e );
     text-align: center;
     padding-top: 40px;
+    min-height: 150px;
 }
 
-header > h1{
+header h1 {
     color: white;
-    font-family:var(--fonte-destaque);
+    font-family: var(--fonte-destaque);
     font-size: 3em;
     margin-bottom: 20px;
     text-shadow: 4px 3px 0px black;
-    
 }
 
-header > p{
+header p{
     font-family: var(--fonte-padrão);
     font-size: 1.2em;
     color: white;
-    max-width: 600px;
-    padding-left: 10px; /*esses dois comandos, para que o texto quebre antes de tocar na borda da tela (p-left e right*/
-    padding-right: 10px;
-    margin: auto;
 }
 
 nav{
     background-color: var(--cor05);
     padding: 10px;
-    box-shadow: 0px 7px 7px black;
-    text-align: left;
+    text-align: left ;
 }
 
 nav > a{
     color: white;
-    padding: 10px; /*para dar afastamento entre as palavras*/
-    border-radius: 5px;
-    text-decoration: none; /*para tirar o sublinhado da palavra*/
-    font-weight: bold; /*para deixar a palavra mais forte*/
-    transition-duration: 1s; /*para dar um efeito na hora que passar o mouse por cima da palavra*/
+    padding: 10px;
+    text-decoration: none;
 }
 
 nav > a:hover{
     background-color: var(--cor03);
-    color: var(--cor05);
+    caret-color: var(--cor05);
 }
 
 main{
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
-    margin-bottom: 20px;  /* para dar margem entre o rodapé e o conteudo*/
+    margin-bottom: 20px;
     background-color: white;
-    padding: 20px;  /* para dar um afastamento do texto */
     box-shadow: 0px 0px 10px black;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; /*arredondei as bordas pq dei afastamento (margim bottom)*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-
 main p{
     margin: 15px 0px; /*para dar espaço do titulo para o texto e assim por diante*/
     text-align: justify;
@@ -108,83 +92,83 @@ main h1{
     color: var(--cor05);
     font-family: var(--font-android);
     font-weight: normal;
-    font-size: 1.8em;
-}
+    font-size: 1.8em;}
 
-main h2{
-    font-family: var(--font-android); 
-    color: var(--cor04); /*deixei a letra um verde mais claro que o h1*/
-    font-size: 1.3em;
-    font-weight: normal;
-    background-image: linear-gradient(to right, var(--cor01), transparent);/*para fazer o degrade */
-    text-indent: 8px; /*para dar um espaço da palavra no degrade */
-}
-
-main strong{
-    color: var(--cor05) ;
-    font-weight: bold;
+    main h2{
+        font-family: var(--font-android); 
+        color: var(--cor04); /*deixei a letra um verde mais claro que o h1*/
+        font-size: 1.3em;
+        font-weight: normal;
+        background-image: linear-gradient(to right, var(--cor01), transparent);/*para fazer o degrade */
+        text-indent: 8px; /*para dar um espaço da palavra no degrade */
+    }
     
-}
-
-main a{
-    text-decoration: none;
-    font-weight:bold;
-    color: var(--cor05);
-    background-color: var(--cor01);
-    padding: 2px 6 px;
-}
-
-main a:hover{
-    text-decoration: underline;
-    color: var(--cor03);
-}
-
-main img{
-    width: 100%;
-}
-
-main img.pequena{
-    max-width: 350px;
-    display: block;
-    margin: auto;
-}
-
-aside{
-    background-color: var(--cor01);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 8px black;
-}
-
-aside h3{
-    background-color: var(--cor04);
-    color: white;
-    padding: 10px;
-    margin: -10px -10px 0px -10px;
-    border-radius: 10px 10px 0px 0px;
-}
-
-aside > ul{
-    list-style-type: '\2714\00a0\00a0';
-    list-style-position: inside; /*para colocar os simbolor da lista para dentro do bloco aside*/
-    columns: 2;
-}
-
-footer{
-    background-color:var(--cor05) ;
-    color: white;
-    text-align: center;
-    font-size: 0.8em;
-    padding: 5px;
-}
-
-footer a{
-    color: white;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-footer a:hover{
-    text-decoration: underline;
-    color: var(--cor01);
-}
+    main strong{
+        color: var(--cor05) ;
+        font-weight: bold;
+        
+    }
+    
+    main a{
+        text-decoration: none;
+        font-weight:bold;
+        color: var(--cor05);
+        background-color: var(--cor01);
+        padding: 2px 6 px;
+    }
+    
+    main a:hover{
+        text-decoration: underline;
+        color: var(--cor03);
+    }
+    
+    main img{
+        width: 100%;
+    }
+    
+    main img.pequena{
+        max-width: 350px;
+        display: block;
+        margin: auto;
+    }
+    
+    aside{
+        background-color: var(--cor01);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 8px black;
+    }
+    
+    aside h3{
+        background-color: var(--cor04);
+        color: white;
+        padding: 10px;
+        margin: -10px -10px 0px -10px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    aside > ul{
+        list-style-type: '\2714\00a0\00a0';
+        list-style-position: inside; /*para colocar os simbolor da lista para dentro do bloco aside*/
+        columns: 2;
+    }
+    
+    footer{
+        background-color:var(--cor05) ;
+        color: white;
+        text-align: center;
+        font-size: 0.8em;
+        padding: 5px;
+    }
+    
+    footer a{
+        color: white;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+    
+    footer a:hover{
+        text-decoration: underline;
+        color: var(--cor01);
+    }
+    
